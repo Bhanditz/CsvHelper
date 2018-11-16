@@ -1,8 +1,8 @@
-import React, { Component } from "react"
-import { withSiteData, withRouteData } from 'react-static'
-import marked from "marked"
-import highlight from "highlight.js"
-import "highlight.js/styles/vs.css"
+import React, { Component } from "react";
+import { withSiteData, withRouteData } from "react-static";
+import marked from "marked";
+import highlight from "highlight.js";
+import "highlight.js/styles/vs.css";
 
 // https://github.com/EmilTholin/react-static-markdown-example
 
@@ -65,9 +65,7 @@ const Content = ({ className, data }) => {
 	const markdown = marked(data);
 
 	return (
-		<div className="container">
-			<div className={className} dangerouslySetInnerHTML={{ __html: markdown }}></div>
-		</div>
+		<div className={className} dangerouslySetInnerHTML={{ __html: markdown }}></div>
 	)
 }
 

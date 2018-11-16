@@ -28,6 +28,17 @@ pre
 			z-index: 50;
 		}
 	}
+
+	.sidebar, .toc
+	{		
+		flex-basis: 350px;
+		flex-grow: 0;
+	}
+
+	.toc
+	{
+		order: 3;
+	}
 }
 
 .header
