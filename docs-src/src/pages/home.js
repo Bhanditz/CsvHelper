@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import { library } from "@fortawesome/fontawesome-svg-core";
 import {
 	faBolt,
 	faBook,
+	faBug,
 	faClipboardCheck,
 	faCode,
 	faCogs,
@@ -19,6 +19,7 @@ import {
 	faGithub
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-static";
 
 export default class Home extends Component {
 	render() {
@@ -207,20 +208,28 @@ export default class Home extends Component {
 										<span>Documentation</span>
 									</h4>
 									<p className="subtitle is-6">
+										Learn how to use CsvHelper using the <Link to="/documentation">documentation</Link>{" "}
+										or check out some <Link to="/examples">examples</Link>.
 									</p>
 								</div>
 
 								<div className="column is-4">
 									<h4 className="title is-4 has-text-weight-normal">
 										<span className="icon">
-											<FontAwesomeIcon icon={faCode} />
+											<FontAwesomeIcon icon={faBug} />
 										</span>
 										&nbsp;&nbsp;
-										<span>Examples</span>
+										<span>Features Requests and Bugs</span>
 									</h4>
 									<p className="subtitle is-6">
+										If you have a feature request or have found a bug, you can{" "}
+										<a href="https://github.com/joshclose/csvhelper/issues" target="_blank">log an issue</a>.
+										Please use{" "}
+										<a href="https://stackoverflow.com/questions/tagged/csvhelper" target="_blank">Stack&nbsp;Overflow</a>{" "}
+										if you have a question.
 									</p>
 								</div>
+
 							</div>
 
 							<h3 className="title is-3">Contributions</h3>
@@ -241,6 +250,13 @@ export default class Home extends Component {
 									<li>When in Rome: Try and follow the code styling already in place.</li>
 								</ol>
 							</div>
+
+							<h3 className="title is-3">License</h3>
+							<hr />
+
+							<p>Completely free for commercial use. Dual licensed. Choose which ever license suits your needs.</p>
+							<p><a href="https://opensource.org/licenses/MS-PL">Microsoft Public License (MS-PL)</a></p>
+							<p><a href="https://opensource.org/licenses/Apache-2.0">Apache License, Version 2.0</a></p>
 						</div>
 					</div>
 				</section>

@@ -1,6 +1,27 @@
 @charset "utf-8";
 @import "../../node_modules/bulma/bulma";
 
+html, body, #root
+{
+	height: 100%;
+}
+
+#root
+{
+	display: flex;
+	flex-direction: column;
+}
+
+.body
+{
+	flex: 1 0 auto;
+}
+
+.footer
+{
+	flex-shrink: 0;
+}
+
 pre
 {
 	padding: 0;
@@ -15,30 +36,27 @@ pre
 	margin: -3.25rem 0 0;
 }
 
-.layout
+.fork-me-on-github
 {
-	.fork-me-on-github
+	img
 	{
-		img
-		{
-			position: fixed;
-			top: 0;
-			right: 0;
-			border: 0;
-			z-index: 50;
-		}
+		position: fixed;
+		top: 0;
+		right: 0;
+		border: 0;
+		z-index: 50;
 	}
+}
 
-	.sidebar, .toc
-	{		
-		flex-basis: 350px;
-		flex-grow: 0;
-	}
+.sidebar, .toc
+{		
+	flex-basis: 350px;
+	flex-grow: 0;
+}
 
-	.toc
-	{
-		order: 3;
-	}
+.toc
+{
+	order: 3;
 }
 
 .header
