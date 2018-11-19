@@ -1,12 +1,14 @@
 import React from "react";
-import { Helmet } from "react-helmet";
 import fs from "fs-extra";
+import path from "path";
 import ExtractTextPlugin from "extract-text-webpack-plugin";
 
 function createData(name) {
-	return () => ({
-		className: name,
-		data: fs.readFileSync(`./src/content/${name}.md`, "utf-8")
+	const className = name.substring(name.lastIndexOf("/"));
+
+	return async () => ({
+		className: className,
+		data: await fs.readFile(`./src/content/${name}.md`, "utf-8")
 	});
 }
 
@@ -48,8 +50,12 @@ export default {
 			},
 			{
 				path: "/documentation",
+				redirect: "/documentation/getting-started"
+			},
+			{
+				path: "/documentation/getting-started",
 				component: "src/pages/documentation",
-				getData: createData("getting-started")
+				getData: createData("documentation/getting-started")
 			},
 			{
 				is404: true,

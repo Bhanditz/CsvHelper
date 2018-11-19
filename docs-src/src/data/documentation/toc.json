@@ -1,1 +1,16 @@
-{}
+{
+	"getting-started": [
+		{
+			"title": "Installation",
+			"path": "#installation"
+		},
+		{
+			"title": "Reading a CSV File",
+			"path": "#reading-a-csv-file"
+		},
+		{
+			"title": "Writing a CSV File",
+			"path": "#writing-a-csv-file"
+		}
+	]
+}

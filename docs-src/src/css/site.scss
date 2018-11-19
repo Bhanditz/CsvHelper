@@ -22,11 +22,11 @@ html, body, #root
 	flex-shrink: 0;
 }
 
-pre
-{
-	padding: 0;
-	overflow: visible;
-}
+// pre
+// {
+// 	padding: 0;
+// 	overflow: visible;
+// }
 
 .title::before
 {
@@ -50,8 +50,11 @@ pre
 
 .sidebar, .toc
 {		
-	flex-basis: 350px;
+	flex-basis: 250px;
 	flex-grow: 0;
+	height: calc(100vh - 4rem);
+	position: sticky;
+	top: 4rem;
 }
 
 .toc
@@ -68,17 +71,5 @@ pre
 		left: 0;
 		right: 0;
 		z-index: 40;
-	}
-}
-
-.home
-{
-	h1 span
-	{
-		background: url(../../public/images/logo.png) top left no-repeat;
-		display: block;
-		height: 260px;
-		text-indent: -9999px;
-		width: 612px;
 	}
 }

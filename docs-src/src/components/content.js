@@ -38,7 +38,7 @@ renderer.code = function (code, lang) {
 		code = this.options.highlight(code, lang) || code;
 	}
 
-	return wrapInColumns(`<pre><code class="box ${lang}">${code}</code></pre>`);
+	return wrapInColumns(`<pre><code class="${lang}">${code}</code></pre>`);
 }
 renderer.heading = (text, level) => `<h${level} id="${toSeoFriendly(text)}" class="title is-${level}"><span>${htmlEncode(text)}</span></h${level}>`;
 renderer.link = (href, title, text) => `<a href="${href}" target="${/^[\/#].*/.test(href) ? "_self" : "_blank"}">${text}</a>`;
