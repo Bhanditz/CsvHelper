@@ -12,5 +12,585 @@
 			"title": "Writing a CSV File",
 			"path": "#writing-a-csv-file"
 		}
+	],
+	"api": [
+		{
+			"title": "CsvHelper",
+			"path": "api/csvhelper",
+			"children": [
+				{
+					"title": "BadDataException",
+					"path": "api/csvhelper/baddataexception"
+				},
+				{
+					"title": "Caches",
+					"path": "api/csvhelper/caches"
+				},
+				{
+					"title": "CsvDataReader",
+					"path": "api/csvhelper/csvdatareader"
+				},
+				{
+					"title": "CsvFieldReader",
+					"path": "api/csvhelper/csvfieldreader"
+				},
+				{
+					"title": "CsvHelperException",
+					"path": "api/csvhelper/csvhelperexception"
+				},
+				{
+					"title": "CsvParser",
+					"path": "api/csvhelper/csvparser"
+				},
+				{
+					"title": "CsvReader",
+					"path": "api/csvhelper/csvreader"
+				},
+				{
+					"title": "CsvSerializer",
+					"path": "api/csvhelper/csvserializer"
+				},
+				{
+					"title": "CsvWriter",
+					"path": "api/csvhelper/csvwriter"
+				},
+				{
+					"title": "Factory",
+					"path": "api/csvhelper/factory"
+				},
+				{
+					"title": "FieldValidationException",
+					"path": "api/csvhelper/fieldvalidationexception"
+				},
+				{
+					"title": "HeaderValidationException",
+					"path": "api/csvhelper/headervalidationexception"
+				},
+				{
+					"title": "IFactory",
+					"path": "api/csvhelper/ifactory"
+				},
+				{
+					"title": "IFieldReader",
+					"path": "api/csvhelper/ifieldreader"
+				},
+				{
+					"title": "IObjectResolver",
+					"path": "api/csvhelper/iobjectresolver"
+				},
+				{
+					"title": "IParser",
+					"path": "api/csvhelper/iparser"
+				},
+				{
+					"title": "IReader",
+					"path": "api/csvhelper/ireader"
+				},
+				{
+					"title": "IReaderRow",
+					"path": "api/csvhelper/ireaderrow"
+				},
+				{
+					"title": "ISerializer",
+					"path": "api/csvhelper/iserializer"
+				},
+				{
+					"title": "IWriter",
+					"path": "api/csvhelper/iwriter"
+				},
+				{
+					"title": "IWriterRow",
+					"path": "api/csvhelper/iwriterrow"
+				},
+				{
+					"title": "MissingFieldException",
+					"path": "api/csvhelper/missingfieldexception"
+				},
+				{
+					"title": "ObjectResolver",
+					"path": "api/csvhelper/objectresolver"
+				},
+				{
+					"title": "ParserException",
+					"path": "api/csvhelper/parserexception"
+				},
+				{
+					"title": "ReaderException",
+					"path": "api/csvhelper/readerexception"
+				},
+				{
+					"title": "ReadingContext",
+					"path": "api/csvhelper/readingcontext"
+				},
+				{
+					"title": "RecordBuilder",
+					"path": "api/csvhelper/recordbuilder"
+				},
+				{
+					"title": "ValidationException",
+					"path": "api/csvhelper/validationexception"
+				},
+				{
+					"title": "WriterException",
+					"path": "api/csvhelper/writerexception"
+				},
+				{
+					"title": "WritingContext",
+					"path": "api/csvhelper/writingcontext"
+				}
+			]
+		},
+		{
+			"title": "CsvHelper.Configuration",
+			"path": "api/csvhelper-configuration",
+			"children": [
+				{
+					"title": "ClassMap",
+					"path": "api/csvhelper-configuration/classmap"
+				},
+				{
+					"title": "ClassMap<TClass>",
+					"path": "api/csvhelper-configuration/classmap1"
+				},
+				{
+					"title": "ClassMapCollection",
+					"path": "api/csvhelper-configuration/classmapcollection"
+				},
+				{
+					"title": "Configuration",
+					"path": "api/csvhelper-configuration/configuration"
+				},
+				{
+					"title": "ConfigurationException",
+					"path": "api/csvhelper-configuration/configurationexception"
+				},
+				{
+					"title": "ConfigurationFunctions",
+					"path": "api/csvhelper-configuration/configurationfunctions"
+				},
+				{
+					"title": "DefaultClassMap<T>",
+					"path": "api/csvhelper-configuration/defaultclassmap1"
+				},
+				{
+					"title": "IBuildableClass<TClass>",
+					"path": "api/csvhelper-configuration/ibuildableclass1"
+				},
+				{
+					"title": "IHasConstant<TClass, TMember>",
+					"path": "api/csvhelper-configuration/ihasconstant2"
+				},
+				{
+					"title": "IHasConvertUsing<TClass, TMember>",
+					"path": "api/csvhelper-configuration/ihasconvertusing2"
+				},
+				{
+					"title": "IHasDefault<TClass, TMember>",
+					"path": "api/csvhelper-configuration/ihasdefault2"
+				},
+				{
+					"title": "IHasIndex<TClass, TMember>",
+					"path": "api/csvhelper-configuration/ihasindex2"
+				},
+				{
+					"title": "IHasIndexOptions<TClass, TMember>",
+					"path": "api/csvhelper-configuration/ihasindexoptions2"
+				},
+				{
+					"title": "IHasMap<TClass>",
+					"path": "api/csvhelper-configuration/ihasmap1"
+				},
+				{
+					"title": "IHasMapOptions<TClass, TMember>",
+					"path": "api/csvhelper-configuration/ihasmapoptions2"
+				},
+				{
+					"title": "IHasName<TClass, TMember>",
+					"path": "api/csvhelper-configuration/ihasname2"
+				},
+				{
+					"title": "IHasNameIndex<TClass, TMember>",
+					"path": "api/csvhelper-configuration/ihasnameindex2"
+				},
+				{
+					"title": "IHasNameIndexOptions<TClass, TMember>",
+					"path": "api/csvhelper-configuration/ihasnameindexoptions2"
+				},
+				{
+					"title": "IHasNameOptions<TClass, TMember>",
+					"path": "api/csvhelper-configuration/ihasnameoptions2"
+				},
+				{
+					"title": "IHasOptional<TClass, TMember>",
+					"path": "api/csvhelper-configuration/ihasoptional2"
+				},
+				{
+					"title": "IHasOptionalOptions<TClass, TMember>",
+					"path": "api/csvhelper-configuration/ihasoptionaloptions2"
+				},
+				{
+					"title": "IHasTypeConverter<TClass, TMember>",
+					"path": "api/csvhelper-configuration/ihastypeconverter2"
+				},
+				{
+					"title": "IHasTypeConverterOptions<TClass, TMember>",
+					"path": "api/csvhelper-configuration/ihastypeconverteroption2"
+				},
+				{
+					"title": "IHasValidate<TClass, TMember>",
+					"path": "api/csvhelper-configuration/ihasvalidate2"
+				},
+				{
+					"title": "IParserConfiguration",
+					"path": "api/csvhelper-configuration/iparserconfiguration"
+				},
+				{
+					"title": "IReaderConfiguration",
+					"path": "api/csvhelper-configuration/ireaderconfiguration"
+				},
+				{
+					"title": "ISerializerConfiguration",
+					"path": "api/csvhelper-configuration/iserializerconfiguration"
+				},
+				{
+					"title": "IWriterConfiguration",
+					"path": "api/csvhelper-configuration/iwriterconfiguration"
+				},
+				{
+					"title": "MapTypeConverterOption",
+					"path": "api/csvhelper-configuration/maptypeconverteroption"
+				},
+				{
+					"title": "MemberMap",
+					"path": "api/csvhelper-configuration/membermap"
+				},
+				{
+					"title": "MemberMap<TClass, TMember>",
+					"path": "api/csvhelper-configuration/membermap2"
+				},
+				{
+					"title": "MemberMapCollection",
+					"path": "api/csvhelper-configuration/membermapcollection"
+				},
+				{
+					"title": "MemberMapData",
+					"path": "api/csvhelper-configuration/membermapdata"
+				},
+				{
+					"title": "MemberNameCollection",
+					"path": "api/csvhelper-configuration/membernamecollection"
+				},
+				{
+					"title": "MemberReferenceMap",
+					"path": "api/csvhelper-configuration/memberreferencemap"
+				},
+				{
+					"title": "MemberReferenceMapCollection",
+					"path": "api/csvhelper-configuration/memberreferencemapcollection"
+				},
+				{
+					"title": "MemberReferenceMapData",
+					"path": "api/csvhelper-configuration/memberreferencemapdata"
+				},
+				{
+					"title": "MemberTypes",
+					"path": "api/csvhelper-configuration/membertypes"
+				},
+				{
+					"title": "ParameterMap",
+					"path": "api/csvhelper-configuration/parametermap"
+				},
+				{
+					"title": "ParameterMapData",
+					"path": "api/csvhelper-configuration/parametermapdata"
+				},
+				{
+					"title": "ParameterReferenceMap",
+					"path": "api/csvhelper-configuration/parameterreferencemap"
+				},
+				{
+					"title": "ParameterReferenceMapData",
+					"path": "api/csvhelper-configuration/parameterreferencemapdata"
+				},
+				{
+					"title": "TrimOptions",
+					"path": "api/csvhelper-configuration/trimoptions"
+				}
+			]
+		},
+		{
+			"title": "CsvHelper.Configuration.Attributes",
+			"path": "api/csvhelper-configuration-attributes",
+			"children": [
+				{
+					"title": "BooleanFalseValuesAttribute",
+					"path": "api/csvhelper-configuration-attributes/booleanfalsevaluesattribute"
+				},
+				{
+					"title": "BooleanTrueValuesAttribute",
+					"path": "api/csvhelper-configuration-attributes/booleantruevaluesattribute"
+				},
+				{
+					"title": "ConstantAttribute",
+					"path": "api/csvhelper-configuration-attributes/constantattribute"
+				},
+				{
+					"title": "CultureInfoAttribute",
+					"path": "api/csvhelper-configuration-attributes/cultureinfoattribute"
+				},
+				{
+					"title": "DateTimeStylesAttribute",
+					"path": "api/csvhelper-configuration-attributes/datetimestylesattribute"
+				},
+				{
+					"title": "DefaultAttribute",
+					"path": "api/csvhelper-configuration-attributes/defaultattribute"
+				},
+				{
+					"title": "FormatAttribute",
+					"path": "api/csvhelper-configuration-attributes/formatattribute"
+				},
+				{
+					"title": "HeaderPrefixAttribute",
+					"path": "api/csvhelper-configuration-attributes/headerprefixattribute"
+				},
+				{
+					"title": "IgnoreAttribute",
+					"path": "api/csvhelper-configuration-attributes/ignoreattribute"
+				},
+				{
+					"title": "IndexAttribute",
+					"path": "api/csvhelper-configuration-attributes/indexattribute"
+				},
+				{
+					"title": "NameAttribute",
+					"path": "api/csvhelper-configuration-attributes/nameattribute"
+				},
+				{
+					"title": "NameIndexAttribute",
+					"path": "api/csvhelper-configuration-attributes/nameindexattribute"
+				},
+				{
+					"title": "NullValuesAttribute",
+					"path": "api/csvhelper-configuration-attributes/nullvaluesattribute"
+				},
+				{
+					"title": "NumberStylesAttribute",
+					"path": "api/csvhelper-configuration-attributes/numberstylesattribute"
+				},
+				{
+					"title": "OptionalAttribute",
+					"path": "api/csvhelper-configuration-attributes/optionalattribute"
+				},
+				{
+					"title": "TypeConverterAttribute",
+					"path": "api/csvhelper-configuration-attributes/typeconverterattribute"
+				}
+			]
+		},
+		{
+			"title": "CsvHelper.Expressions",
+			"path": "api/csvhelper-expressions",
+			"children": [
+				{
+					"title": "DynamicRecordCreator",
+					"path": "api/csvhelper-expressions/dynamicrecordcreator"
+				},
+				{
+					"title": "DynamicRecordWriter",
+					"path": "api/csvhelper-expressions/dynamicrecordwriter"
+				},
+				{
+					"title": "ExpandoObjectRecordWriter",
+					"path": "api/csvhelper-expressions/expandoobjectrecordwriter"
+				},
+				{
+					"title": "ExpressionManager",
+					"path": "api/csvhelper-expressions/expressionmanager"
+				},
+				{
+					"title": "ObjectRecordCreator",
+					"path": "api/csvhelper-expressions/objectrecordcreator"
+				},
+				{
+					"title": "ObjectRecordWriter",
+					"path": "api/csvhelper-expressions/objectrecordwriter"
+				},
+				{
+					"title": "PrimitiveRecordCreator",
+					"path": "api/csvhelper-expressions/primitiverecordcreator"
+				},
+				{
+					"title": "PrimitiveRecordWriter",
+					"path": "api/csvhelper-expressions/primitiverecordwriter"
+				},
+				{
+					"title": "RecordCreator",
+					"path": "api/csvhelper-expressions/recordcreator"
+				},
+				{
+					"title": "RecordCreatorFactory",
+					"path": "api/csvhelper-expressions/recordcreatorfactory"
+				},
+				{
+					"title": "RecordHydrator",
+					"path": "api/csvhelper-expressions/recordhydrator"
+				},
+				{
+					"title": "RecordManager",
+					"path": "api/csvhelper-expressions/recordmanager"
+				},
+				{
+					"title": "RecordWriter",
+					"path": "api/csvhelper-expressions/recordwriter"
+				},
+				{
+					"title": "RecordWriterFactory",
+					"path": "api/csvhelper-expressions/recordwriterfactory"
+				}
+			]
+		},
+		{
+			"title": "CsvHelper.TypeConversion",
+			"path": "api/csvhelper-typeconversion",
+			"children": [
+				{
+					"title": "ArrayConverter",
+					"path": "api/csvhelper-typeconversion/arrayconverter"
+				},
+				{
+					"title": "BooleanConverter",
+					"path": "api/csvhelper-typeconversion/booleanconverter"
+				},
+				{
+					"title": "ByteArrayConverter",
+					"path": "api/csvhelper-typeconversion/bytearrayconverter"
+				},
+				{
+					"title": "ByteConverter",
+					"path": "api/csvhelper-typeconversion/byteconverter"
+				},
+				{
+					"title": "CharConverter",
+					"path": "api/csvhelper-typeconversion/charconverter"
+				},
+				{
+					"title": "CollectionGenericConverter",
+					"path": "api/csvhelper-typeconversion/collectiongenericconverter"
+				},
+				{
+					"title": "DateTimeConverter",
+					"path": "api/csvhelper-typeconversion/datetimeconverter"
+				},
+				{
+					"title": "DateTimeOffsetConverter",
+					"path": "api/csvhelper-typeconversion/datetimeoffsetconverter"
+				},
+				{
+					"title": "DecimalConverter",
+					"path": "api/csvhelper-typeconversion/decimalconverter"
+				},
+				{
+					"title": "DefaultTypeConverter",
+					"path": "api/csvhelper-typeconversion/defaulttypeconverter"
+				},
+				{
+					"title": "DoubleConverter",
+					"path": "api/csvhelper-typeconversion/doubleconverter"
+				},
+				{
+					"title": "EnumConverter",
+					"path": "api/csvhelper-typeconversion/enumconverter"
+				},
+				{
+					"title": "EnumerableConverter",
+					"path": "api/csvhelper-typeconversion/enumerableconverter"
+				},
+				{
+					"title": "GuidConverter",
+					"path": "api/csvhelper-typeconversion/guidconverter"
+				},
+				{
+					"title": "IDictionaryConverter",
+					"path": "api/csvhelper-typeconversion/idictionaryconverter"
+				},
+				{
+					"title": "IDictionaryGenericConverter",
+					"path": "api/csvhelper-typeconversion/idictionarygenericconverter"
+				},
+				{
+					"title": "IEnumerableConverter",
+					"path": "api/csvhelper-typeconversion/ienumerableconverter"
+				},
+				{
+					"title": "IEnumerableGenericConverter",
+					"path": "api/csvhelper-typeconversion/ienumerablegenericconverter"
+				},
+				{
+					"title": "Int16Converter",
+					"path": "api/csvhelper-typeconversion/int16converter"
+				},
+				{
+					"title": "Int32Converter",
+					"path": "api/csvhelper-typeconversion/int32converter"
+				},
+				{
+					"title": "Int64Converter",
+					"path": "api/csvhelper-typeconversion/int64converter"
+				},
+				{
+					"title": "ITypeConverter",
+					"path": "api/csvhelper-typeconversion/itypeconverter"
+				},
+				{
+					"title": "NullableConverter",
+					"path": "api/csvhelper-typeconversion/nullableconverter"
+				},
+				{
+					"title": "SByteConverter",
+					"path": "api/csvhelper-typeconversion/sbyteconverter"
+				},
+				{
+					"title": "SingleConverter",
+					"path": "api/csvhelper-typeconversion/singleconverter"
+				},
+				{
+					"title": "StringConverter",
+					"path": "api/csvhelper-typeconversion/stringconverter"
+				},
+				{
+					"title": "TimeSpanConverter",
+					"path": "api/csvhelper-typeconversion/timespanconverter"
+				},
+				{
+					"title": "TypeConverterCache",
+					"path": "api/csvhelper-typeconversion/typeconvertercache"
+				},
+				{
+					"title": "TypeConverterException",
+					"path": "api/csvhelper-typeconversion/typeconverterexception"
+				},
+				{
+					"title": "TypeConverterOptions",
+					"path": "api/csvhelper-typeconversion/typeconverteroptions"
+				},
+				{
+					"title": "TypeConverterOptionsCache",
+					"path": "api/csvhelper-typeconversion/typeconverteroptionscache"
+				},
+				{
+					"title": "UInt16Converter",
+					"path": "api/csvhelper-typeconversion/uint16converter"
+				},
+				{
+					"title": "UInt32Converter",
+					"path": "api/csvhelper-typeconversion/uint32converter"
+				},
+				{
+					"title": "UInt64Converter",
+					"path": "api/csvhelper-typeconversion/uint64converter"
+				}
+			]
+		}
 	]
 }

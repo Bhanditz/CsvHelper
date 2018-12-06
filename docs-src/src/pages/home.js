@@ -4,7 +4,6 @@ import {
 	faBook,
 	faBug,
 	faClipboardCheck,
-	faCode,
 	faCogs,
 	faDownload,
 	faFileExcel,

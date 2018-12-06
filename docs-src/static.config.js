@@ -49,13 +49,24 @@ export default {
 				component: "src/pages/home"
 			},
 			{
-				path: "/documentation",
-				redirect: "/documentation/getting-started"
+				path: "/getting-started",
+				component: "src/pages/documentation",
+				getData: createData("getting-started")
 			},
 			{
-				path: "/documentation/getting-started",
+				path: "/examples",
 				component: "src/pages/documentation",
-				getData: createData("documentation/getting-started")
+				getData: createData("examples")
+			},
+			{
+				path: "/api",
+				component: "src/pages/documentation",
+				getData: createData("api")
+			},
+			{
+				path: "/change-log",
+				component: "src/pages/change-log",
+				getData: createData("change-log")
 			},
 			{
 				is404: true,

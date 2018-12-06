@@ -9,10 +9,10 @@ export default class Documentation extends Component {
 		return (
 			<div className="documentation container is-fluid">
 				<div className="columns">
-					<div className="column sidebar">
+					{/* <div className="column left-sidebar">
 						<Menu />
-					</div>
-					<div className="column toc">
+					</div> */}
+					<div className="column right-sidebar">
 						<TableOfContents />
 					</div>
 					<div className="column">

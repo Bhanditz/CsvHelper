@@ -22,10 +22,10 @@ export default class Header extends Component {
 
 						<div className="navbar-menu">
 							<div className="navbar-start">
-								<Link className="navbar-item" to="/">Home</Link>
-								<Link className="navbar-item" to="/documentation">Documentation</Link>
-								<a className="navbar-item">Examples</a>
-								<a className="navbar-item">Change Log</a>
+								<Link className="navbar-item" to="/getting-started">Getting Started</Link>
+								<Link className="navbar-item" to="/examples">Examples</Link>
+								<Link className="navbar-item" to="/api">API</Link>
+								<Link className="navbar-item" to="/change-log">Change Log</Link>
 							</div>
 						</div>
 					</div>

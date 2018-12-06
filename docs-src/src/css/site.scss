@@ -22,12 +22,6 @@ html, body, #root
 	flex-shrink: 0;
 }
 
-// pre
-// {
-// 	padding: 0;
-// 	overflow: visible;
-// }
-
 .title::before
 {
 	content: "";
@@ -48,16 +42,16 @@ html, body, #root
 	}
 }
 
-.sidebar, .toc
+.left-sidebar, .right-sidebar
 {		
-	flex-basis: 250px;
+	flex-basis: 350px;
 	flex-grow: 0;
 	height: calc(100vh - 4rem);
 	position: sticky;
 	top: 4rem;
 }
 
-.toc
+.right-sidebar
 {
 	order: 3;
 }
@@ -71,5 +65,25 @@ html, body, #root
 		left: 0;
 		right: 0;
 		z-index: 40;
+	}
+}
+
+.toc
+{
+	.toc-item
+	{
+		margin-bottom: 0.5em;
+		position: relative;
+
+		.toc-item-toggle
+		{
+			bottom: 0;
+			display: flex;
+			justify-content: flex-end;
+			left: 0;
+			position: absolute;
+			right: 0;
+			top: 0;			
+		}		
 	}
 }

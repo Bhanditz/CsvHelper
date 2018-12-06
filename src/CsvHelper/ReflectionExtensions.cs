@@ -13,7 +13,7 @@ namespace CsvHelper
 	/// <summary>
 	/// Extensions to help with reflection.
 	/// </summary>
-	public static class ReflectionExtensions
+	internal static class ReflectionExtensions
 	{
 		/// <summary>
 		/// Gets the type from the member.
