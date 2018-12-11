@@ -207,7 +207,7 @@ export default class Home extends Component {
 										<span>Documentation</span>
 									</h4>
 									<p className="subtitle is-6">
-										Learn how to use CsvHelper using the <Link to="/documentation">documentation</Link>{" "}
+										Learn how to use CsvHelper using the <Link to="/api">API reference</Link>{" "}
 										or check out some <Link to="/examples">examples</Link>.
 									</p>
 								</div>

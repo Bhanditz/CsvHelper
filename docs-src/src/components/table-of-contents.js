@@ -53,8 +53,6 @@ class Toc extends Component {
 	render() {
 		const { toc } = this.props;
 
-		console.log("toc", toc);
-
 		return (
 			<Fragment>
 				{toc && (

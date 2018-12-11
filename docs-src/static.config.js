@@ -160,6 +160,7 @@ export default {
 		await fs.copy("./dist", "../docs")
 	},
 	devServer: {
+		port: 3001,
 		historyApiFallback: {
 			disableDotRule: true
 		}
