@@ -3,6 +3,7 @@ import { withSiteData, withRouteData } from "react-static";
 import marked from "marked";
 import highlight from "highlight.js";
 import "highlight.js/styles/vs.css";
+import { Link } from "react-static";
 
 // https://github.com/EmilTholin/react-static-markdown-example
 
@@ -41,13 +42,20 @@ renderer.code = function (code, lang) {
 	return wrapInColumns(`<pre><code class="${lang}">${code}</code></pre>`);
 }
 renderer.heading = (text, level) => `<h${level} id="${toSeoFriendly(text)}" class="title is-${level}"><span>${htmlEncode(text)}</span></h${level}>`;
-renderer.link = (href, title, text) => `<a href="${href}" target="${/^[\/#].*/.test(href) ? "_self" : "_blank"}">${text}</a>`;
+renderer.link = (href, title, text) => `<a href="${href}" target="${/^[\/#].*/.test(href) ? "_self" : "_self"}">${text}</a>`;
 renderer.list = (body, ordered) => {
 	return ordered
-		? `<div class="content"><ol>${body}</ol></div>` :
-		`<div class="content"><ul>${body}</ul></div>`;
+		? `<div class="content"><ol>${body}</ol></div>`
+		: `<div class="content"><ul>${body}</ul></div>`;
 };
 renderer.paragraph = text => wrapInColumns(`<p>${text}</p>`);
+renderer.table = (header, body) => `
+<table class="table">
+	<thead>${header}</thead>
+	<tbody>${body}</tbody>
+</table>
+`;
+
 marked.setOptions({
 	renderer,
 	highlight: (code, language, callback) => {

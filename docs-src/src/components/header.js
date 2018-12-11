@@ -1,5 +1,7 @@
-import React, { Component } from "react"
-import { Link } from "react-static"
+import React, { Component } from "react";
+import { Link } from "react-static";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faGit } from "@fortawesome/free-brands-svg-icons";
 
 export default class Header extends Component {
 
@@ -26,6 +28,13 @@ export default class Header extends Component {
 								<Link className="navbar-item" to="/examples">Examples</Link>
 								<Link className="navbar-item" to="/api">API</Link>
 								<Link className="navbar-item" to="/change-log">Change Log</Link>
+							</div>
+							<div className="navbar-end">
+								<a className="navbar-item" href="https://github.com/JoshClose/CsvHelper">
+									<span className="icon">
+										<FontAwesomeIcon icon={faGithub} />
+									</span>
+								</a>
 							</div>
 						</div>
 					</div>

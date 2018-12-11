@@ -8,14 +8,11 @@ export default class Documentation extends Component {
 	render() {
 		return (
 			<div className="documentation container is-fluid">
-				<div className="columns">
-					{/* <div className="column left-sidebar">
-						<Menu />
-					</div> */}
-					<div className="column right-sidebar">
+				<div className="sidebar-container">
+					<div className="right-sidebar">
 						<TableOfContents />
 					</div>
-					<div className="column">
+					<div className="sidebar-content">
 						<Content />
 					</div>
 				</div>

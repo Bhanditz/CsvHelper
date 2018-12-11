@@ -1,22 +1,12 @@
 import React, { Component, Fragment } from "react";
-import { withRouter, Link } from "react-static";
+import { withRouter, Link, withRouteData } from "react-static";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleUp, faAngleDown } from "@fortawesome/free-solid-svg-icons";
-
-import data from "../data/documentation/toc.json";
 
 class Toc extends Component {
 
 	state = {
 		openTocItems: []
-	}
-
-	getToc() {
-		const { url } = this.props.match;
-		const page = url.substring(url.lastIndexOf("/") + 1);
-		const toc = data[page];
-
-		return toc;
 	}
 
 	handleItemToggleClick = (item) => {
@@ -48,7 +38,7 @@ class Toc extends Component {
 								</span>
 							</a>
 						)}
-						<Link to={item.path}>{item.title}</Link>
+						<Link className="toc-item-name" to={`/${item.path}`}>{item.title}</Link>
 						{openTocItems.includes(item.path) && (
 							<Fragment>
 								{item.children && this.renderTocItems(item.children, nestingIndex + 1)}
@@ -61,14 +51,20 @@ class Toc extends Component {
 	}
 
 	render() {
-		const toc = this.getToc();
+		const { toc } = this.props;
+
+		console.log("toc", toc);
 
 		return (
-			<div className="toc">
-				{this.renderTocItems(toc, 0)}
-			</div>
+			<Fragment>
+				{toc && (
+					<div className="toc">
+						{this.renderTocItems(toc.children, 0)}
+					</div>
+				)}
+			</Fragment>
 		);
 	}
 };
 
-export default withRouter(Toc);
+export default withRouteData(withRouter(Toc));

@@ -1,15 +1,42 @@
 import React from "react";
 import fs from "fs-extra";
-import path from "path";
 import ExtractTextPlugin from "extract-text-webpack-plugin";
+
+import toc from "./src/data/toc.json";
 
 function createData(name) {
 	const className = name.substring(name.lastIndexOf("/"));
+	const tocKey = name.substring(0, name.indexOf("/"));
 
 	return async () => ({
 		className: className,
-		data: await fs.readFile(`./src/content/${name}.md`, "utf-8")
+		data: await fs.readFile(`./src/content/${name}.md`, "utf-8"),
+		toc: tocKey ? toc[tocKey] : toc[name]
 	});
+}
+
+function createRoutesFromToc() {
+	const routes = [];
+	Object.entries(toc).forEach(([key, value]) => {
+		createRoutesFromTocItem(value, routes);
+	});
+
+	return routes;
+}
+
+function createRoutesFromTocItem(item, routes) {
+	const route = {
+		path: item.path,
+		component: "src/pages/documentation",
+		getData: createData(item.path)
+	};
+	routes.push(route);
+
+	if (item.children) {
+		item.children.forEach(child => {
+			createRoutesFromTocItem(child, routes);
+		});
+	}
 }
 
 export default {
@@ -59,11 +86,6 @@ export default {
 				getData: createData("examples")
 			},
 			{
-				path: "/api",
-				component: "src/pages/documentation",
-				getData: createData("api")
-			},
-			{
 				path: "/change-log",
 				component: "src/pages/change-log",
 				getData: createData("change-log")
@@ -71,7 +93,8 @@ export default {
 			{
 				is404: true,
 				component: "src/pages/404",
-			}
+			},
+			...createRoutesFromToc()
 		]
 	},
 	webpack: (config, { defaultLoaders, stage }) => {
@@ -135,5 +158,10 @@ export default {
 		console.log("Copying build to docs folder.");
 		await fs.remove("../docs");
 		await fs.copy("./dist", "../docs")
+	},
+	devServer: {
+		historyApiFallback: {
+			disableDotRule: true
+		}
 	}
 }
