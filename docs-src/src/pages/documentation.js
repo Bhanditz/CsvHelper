@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 
-import Menu from "../components/menu";
 import Content from "../components/content";
 import TableOfContents from "../components/table-of-contents";
 
@@ -8,11 +7,13 @@ export default class Documentation extends Component {
 	render() {
 		return (
 			<div className="documentation container is-fluid">
-				<div className="sidebar-container">
-					<div className="right-sidebar">
-						<TableOfContents />
+				<div className="columns">
+					<div className="column container-right">
+						<div className="sidebar">
+							<TableOfContents />
+						</div>
 					</div>
-					<div className="sidebar-content">
+					<div className="column content">
 						<Content />
 					</div>
 				</div>

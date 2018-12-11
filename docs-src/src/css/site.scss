@@ -30,33 +30,6 @@ html, body, #root
 	margin: -3.25rem 0 0;
 }
 
-.sidebar-container
-{
-	display: flex;
-}
-
-.sidebar-content
-{
-	flex-grow: 1;
-	flex-shrink: 1;
-	overflow: hidden;
-	position: relative;
-}
-
-.left-sidebar, .right-sidebar
-{		
-	flex-basis: 350px;
-	flex-grow: 0;
-	flex-shrink: 0;
-	// height: calc(100vh - 4rem);
-	position: relative;
-}
-
-.right-sidebar
-{
-	order: 3;
-}
-
 .header
 {
 	.navbar:first-child
@@ -66,6 +39,44 @@ html, body, #root
 		left: 0;
 		right: 0;
 		z-index: 40;
+	}
+}
+
+.content
+{
+	flex-grow: 1;
+	flex-shrink: 1;
+	overflow: hidden;
+	position: relative;
+}
+
+.container-left, .container-right
+{		
+	flex-basis: 350px;
+	flex-grow: 0;
+	flex-shrink: 0;
+	// height: calc(100vh - 4rem);
+	//position: relative;
+}
+
+.container-right
+{
+	order: 3;
+}
+
+@media screen and (min-width: $tablet)
+{	
+	.sidebar
+	{
+		position: fixed;
+		top: 80px;
+		bottom: 0;
+		overflow-y: auto;
+	}
+
+	.toc
+	{
+		width: 326px;
 	}
 }
 
