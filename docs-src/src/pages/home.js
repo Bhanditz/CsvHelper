@@ -34,7 +34,7 @@ export default class Home extends Component {
 
 									<div className="field is-grouped">
 										<div className="control">
-											<a className="button is-large is-success">
+											<a className="button is-large is-success" href="https://www.nuget.org/packages/CsvHelper/">
 												<span className="icon">
 													<FontAwesomeIcon icon={faDownload} />
 												</span>
@@ -42,12 +42,12 @@ export default class Home extends Component {
 											</a>
 										</div>
 										<div className="control">
-											<a className="button is-large is-link" href="https://www.nuget.org/packages/CsvHelper/" target="_blank">
+											<Link className="button is-large is-link" to="/getting-started">
 												<span className="icon">
 													<FontAwesomeIcon icon={faPlayCircle} />
 												</span>
 												<span>Get Started</span>
-											</a>
+											</Link>
 										</div>
 									</div>
 								</div>
@@ -113,7 +113,7 @@ export default class Home extends Component {
 											<FontAwesomeIcon icon={faClipboardCheck} />
 										</span>
 										&nbsp;&nbsp;
-										<span><a href="https://tools.ietf.org/html/rfc4180" target="_blank">RFC 4180</a> Compliant</span>
+										<span><a href="https://tools.ietf.org/html/rfc4180">RFC 4180</a> Compliant</span>
 									</h4>
 									<p className="subtitle is-6">Adheres to the RFC 4180 standard to ensure compatibility across systems.</p>
 								</div>
@@ -149,10 +149,10 @@ export default class Home extends Component {
 										<span>Run Anywhere</span>
 									</h4>
 									<p className="subtitle is-6">
-										CsvHelper is built on .NET Standard 2.0 which allows it to be ran
+										CsvHelper is built on .NET Standard 2.0 which allows it to run
 										{" "}
-										<a href="https://docs.microsoft.com/en-us/dotnet/standard/net-standard" target="_blank">almost everywhere</a>.
-										Older version of .NET are possible if needed.
+										<a href="https://docs.microsoft.com/en-us/dotnet/standard/net-standard">almost everywhere</a>.
+										Older versions of .NET are possible if needed.
 									</p>
 								</div>
 
@@ -168,9 +168,9 @@ export default class Home extends Component {
 										Many contributors have helped make CsvHelper the great library it is today.
 										Completely free for commercial use. Dual licensed under
 										{" "}
-										<a href="https://opensource.org/licenses/MS-PL" target="_blank">MS-PL</a> and
+										<a href="https://opensource.org/licenses/MS-PL">MS-PL</a> and
 										{" "}
-										<a href="https://opensource.org/licenses/Apache-2.0" target="_blank">Apache 2</a>.
+										<a href="https://opensource.org/licenses/Apache-2.0">Apache 2</a>.
 									</p>
 								</div>
 
@@ -189,7 +189,7 @@ export default class Home extends Component {
 										<span>Stack Overflow</span>
 									</h4>
 									<p className="subtitle is-6">
-										<a href="https://stackoverflow.com/questions/tagged/csvhelper" target="_blank">Stack Overflow</a>{" "}
+										<a href="https://stackoverflow.com/questions/tagged/csvhelper">Stack Overflow</a>{" "}
 										has millions of users in its community just waiting to answer your questions.
 										There is only one of me and I'm pretty busy.
 										<span className="icon">
@@ -222,9 +222,9 @@ export default class Home extends Component {
 									</h4>
 									<p className="subtitle is-6">
 										If you have a feature request or have found a bug, you can{" "}
-										<a href="https://github.com/joshclose/csvhelper/issues" target="_blank">log an issue</a>.
+										<a href="https://github.com/joshclose/csvhelper/issues">log an issue</a>.
 										Please use{" "}
-										<a href="https://stackoverflow.com/questions/tagged/csvhelper" target="_blank">Stack&nbsp;Overflow</a>{" "}
+										<a href="https://stackoverflow.com/questions/tagged/csvhelper">Stack&nbsp;Overflow</a>{" "}
 										if you have a question.
 									</p>
 								</div>
@@ -246,7 +246,8 @@ export default class Home extends Component {
 										If you do a bug fix, there should be a test specific to that bug so it doesn't happen again.</li>
 									<li>Pull requests should have a single commit. If you have multiple commits, squash them into a single commit before
 										requesting a pull.</li>
-									<li>When in Rome: Try and follow the code styling already in place.</li>
+									<li>When in Rome: Try and follow the code styling already in place. I use default Visual Studio Text Editor settings
+										but change tabs to Keep tabs.</li>
 								</ol>
 							</div>
 

@@ -586,5 +586,73 @@
 				]
 			}
 		]
+	},
+	"examples": {
+		"title": "Examples",
+		"path": "examples",
+		"children": [
+			{
+				"title": "Prerequisites",
+				"path": "examples/prerequisites",
+				"children": [
+					{
+						"title": "Using and Dispose",
+						"path": "examples/prerequisites/using-dispose"
+					},
+					{
+						"title": "Reading and Writing Files",
+						"path": "examples/prerequisites/reading-writing-files"
+					},
+					{
+						"title": "Streams",
+						"path": "examples/prerequisites/streams"
+					}
+				]
+			},
+			{
+				"title": "Reading",
+				"path": "examples/reading",
+				"children": [
+					{
+						"title": "Basic",
+						"path": "examples/reading/basic"
+					}
+				]
+			},
+			{
+				"title": "Writing",
+				"path": "examples/writing"
+			},
+			{
+				"title": "Configuration",
+				"path": "examples/configuration"
+			},
+			{
+				"title": "Type Conversion",
+				"path": "examples/type-conversion"
+			},
+			{
+				"title": "Data Tables",
+				"path": "examples/data-tables"
+			}
+		]
+	},
+	"getting-started": {
+		"title": "Getting Started",
+		"path": "getting-started",
+		"children": [
+			{
+				"title": "Installation",
+				"path": "getting-started#installation"
+			},
+			{
+				"title": "Reading a CSV File",
+				"path": "getting-started#reading-a-csv-file"
+			},
+			{
+				"title": "Writing a CSV File",
+				"path": "getting-started#writing-a-csv-file"
+			}
+		]
 	}
 }
