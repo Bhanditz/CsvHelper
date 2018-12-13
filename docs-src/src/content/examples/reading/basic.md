@@ -2,42 +2,25 @@
 
 If your header names match your property names, you can read a CSV file without any configuration.
 
-basic.csv
+###### Data
 ```
 Id,Name
 1,one
 2,two
 ```
 
-Basic.cs
-```cs
-public class Basic
-{
-	public int Id { get; set; }
-	public string Name { get; set; }
-}
-```
-
-example
-```cs
-using (var reader = new StreamReader("basic.csv"))
-using (var csv = new CsvReader(reader))
-{
-	var records = csv.GetRecords<Basic>();
-}
-```
-
+###### Example
 ```cs
 void Main()
 {
-	using (var reader = new StreamReader("basic.cs"))
+	using (var reader = new StreamReader("path\\to\\file.csv"))
 	using (var csv = new CsvReader(reader))
 	{
-		csv.GetRecords<Test>();
+		var records = csv.GetRecords<Foo>();
 	}
 }
 
-public class Test
+public class Foo
 {
 	public int Id { get; set; }
 	public string Name { get; set; }

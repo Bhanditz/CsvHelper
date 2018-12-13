@@ -95,19 +95,22 @@ namespace CsvHelper.Tests.DataTableTests
 			using (var csv = new CsvReader(reader))
 			{
 				csv.Configuration.Delimiter = ",";
-				var dataReader = new CsvDataReader(csv);
 
-				var dataTable = new DataTable();
-				dataTable.Columns.Add("Id", typeof(int));
-				dataTable.Columns.Add("Name", typeof(string));
+				using (var dataReader = new CsvDataReader(csv))
+				{
 
-				dataTable.Load(dataReader);
+					var dataTable = new DataTable();
+					dataTable.Columns.Add("Id", typeof(int));
+					dataTable.Columns.Add("Name", typeof(string));
 
-				Assert.AreEqual(2, dataTable.Rows.Count);
-				Assert.AreEqual(1, dataTable.Rows[0]["Id"]);
-				Assert.AreEqual("one", dataTable.Rows[0]["Name"]);
-				Assert.AreEqual(2, dataTable.Rows[1]["Id"]);
-				Assert.AreEqual("two", dataTable.Rows[1]["Name"]);
+					dataTable.Load(dataReader);
+
+					Assert.AreEqual(2, dataTable.Rows.Count);
+					Assert.AreEqual(1, dataTable.Rows[0]["Id"]);
+					Assert.AreEqual("one", dataTable.Rows[0]["Name"]);
+					Assert.AreEqual(2, dataTable.Rows[1]["Id"]);
+					Assert.AreEqual("two", dataTable.Rows[1]["Name"]);
+				}
 			}
 		}
 
@@ -122,13 +125,15 @@ namespace CsvHelper.Tests.DataTableTests
 			{
 				csv.Configuration.HasHeaderRecord = false;
 				csv.Configuration.Delimiter = ",";
-				var dataReader = new CsvDataReader(csv);
+				using (var dataReader = new CsvDataReader(csv))
+				{
 
-				var dataTable = new DataTable();
+					var dataTable = new DataTable();
 
-				dataTable.Load(dataReader);
+					dataTable.Load(dataReader);
 
-				Assert.AreEqual(0, dataTable.Rows.Count);
+					Assert.AreEqual(0, dataTable.Rows.Count);
+				}
 			}
 		}
 	}

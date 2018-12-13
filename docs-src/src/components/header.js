@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-static";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faGit } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faTwitter } from "@fortawesome/free-brands-svg-icons";
 
 export default class Header extends Component {
 
@@ -30,6 +30,11 @@ export default class Header extends Component {
 								<Link className="navbar-item" to="/change-log">Change Log</Link>
 							</div>
 							<div className="navbar-end">
+								<a className="navbar-item" href="https://twitter.com/JoshClose">
+									<span className="icon">
+										<FontAwesomeIcon icon={faTwitter} />
+									</span>
+								</a>
 								<a className="navbar-item" href="https://github.com/JoshClose/CsvHelper">
 									<span className="icon">
 										<FontAwesomeIcon icon={faGithub} />

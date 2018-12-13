@@ -625,15 +625,75 @@
 			},
 			{
 				"title": "Configuration",
-				"path": "examples/configuration"
+				"path": "examples/configuration",
+				"children": [
+					{
+						"title": "Class Maps",
+						"path": "examples/configuration/class-maps",
+						"children": [
+							{
+								"title": "Mapping Properties",
+								"path": "examples/configuration/class-maps/mapping-properties"
+							},
+							{
+								"title": "Mapping by Name",
+								"path": "examples/configuration/class-maps/mapping-by-name"
+							},
+							{
+								"title": "Mapping by Alternate Names",
+								"path": "examples/configuration/class-maps/mapping-by-alternate-names"
+							},
+							{
+								"title": "Mapping Duplicate Names",
+								"path": "examples/configuration/class-maps/mapping-duplicate-names"
+							},
+							{
+								"title": "Mapping by Index",
+								"path": "examples/configuration/class-maps/mapping-by-index"
+							},
+							{
+								"title": "Auto Mapping",
+								"path": "examples/configuration/class-maps/auto-mapping"
+							},
+							{
+								"title": "Ignoring Properties",
+								"path": "examples/configuration/class-maps/ignoring-properties"
+							},
+							{
+								"title": "Constant Value",
+								"path": "examples/configuration/class-maps/constant-value"
+							},
+							{
+								"title": "Type Conversion",
+								"path": "examples/configuration/class-maps/type-conversion"
+							},
+							{
+								"title": "Inline Type Conversion",
+								"path": "examples/configuration/class-maps/inline-type-conversion"
+							},
+							{
+								"title": "Optional Maps",
+								"path": "examples/configuration/class-maps/optional-maps"
+							},
+							{
+								"title": "Validation",
+								"path": "examples/configuration/class-maps/validation"
+							}
+						]
+					},
+					{
+						"title": "Attributes",
+						"path": "examples/configuration/attributes"
+					}
+				]
 			},
 			{
 				"title": "Type Conversion",
 				"path": "examples/type-conversion"
 			},
 			{
-				"title": "Data Tables",
-				"path": "examples/data-tables"
+				"title": "DataTable",
+				"path": "examples/data-table"
 			}
 		]
 	},

@@ -1,5 +1,6 @@
 @charset "utf-8";
 @import "../../node_modules/bulma/bulma";
+@import "./toc";
 
 html, body, #root
 {
@@ -80,27 +81,3 @@ html, body, #root
 	}
 }
 
-.toc
-{
-	.toc-item
-	{
-		margin-bottom: 0.5em;
-		position: relative;
-
-		.toc-item-toggle
-		{
-			bottom: 0;
-			display: flex;
-			justify-content: flex-end;
-			left: 0;
-			position: absolute;
-			right: 0;
-			top: 0;			
-		}		
-
-		.toc-item-name
-		{
-			position: relative;
-		}		
-	}
-}
