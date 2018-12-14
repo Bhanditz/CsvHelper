@@ -1,6 +1,7 @@
 # CsvHelper Namespace
 
-Classes | &nbsp;
+### Classes
+&nbsp; | &nbsp;
 - | -
 [BadDataException](/api/csvhelper/baddataexception) | Represents errors that occur due to bad data.
 [CsvDataReader](/api/csvhelper/csvdatareader) | Provides a means of reading a CSV file forward-only by using CsvReader.
@@ -23,7 +24,8 @@ Classes | &nbsp;
 [WriterException](/api/csvhelper/writerexception) | Represents errors that occur while writing a CSV file.
 [WritingContext](/api/csvhelper/writingcontext) | CSV writing state.
 
-Interfaces | &nbsp;
+## Interfaces
+&nbsp; | &nbsp;
 - | -
 [IFactory](/api/csvhelper/ifactory) | Defines methods used to create CsvHelper classes.
 [IFieldReader](/api/csvhelper/ifieldreader) | Defines methods used to read a field in a CSV file.
@@ -35,6 +37,9 @@ Interfaces | &nbsp;
 [IWriter](/api/csvhelper/iwriter) | Defines methods used to write to a CSV file.
 [IWriterRow](/api/csvhelper/iwriterrow) | Defines methods used to write a CSV row.
 
-Enums | &nbsp;
+## Enums
+&nbsp; | &nbsp;
 - | -
 [Caches](/api/csvhelper/caches) | Types of caches.
+
+<br />

@@ -24,9 +24,8 @@ class Toc extends Component {
 
 	updateOpenTocItemsForRoute(item, openTocItems) {
 		const routePath = this.props.location.pathname;
-		const itemPath = `/${item.path}`;
 
-		if (routePath.startsWith(`/${item.path}`)) {
+		if (routePath.startsWith(`/${item.path}/`)) {
 			openTocItems.push(item.path);
 		}
 

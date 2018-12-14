@@ -81,3 +81,8 @@ html, body, #root
 	}
 }
 
+.table thead.is-empty th
+{
+	line-height: 0;
+	padding: 0;
+}

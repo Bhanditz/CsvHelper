@@ -1,6 +1,7 @@
 # CsvHelper.TypeConversion Namespace
 
-Classes | &nbsp;
+## Classes
+&nbsp; | &nbsp;
 - | -
 [ArrayConverter](/api/CsvHelper.TypeConversion/ArrayConverter) | Converts an System.Array to and from a System.String.
 [BooleanConverter](/api/CsvHelper.TypeConversion/BooleanConverter) | Converts a System.Boolean to and from a System.String.
@@ -36,10 +37,14 @@ Classes | &nbsp;
 [UInt32Converter](/api/CsvHelper.TypeConversion/UInt32Converter) | Converts a System.UInt32 to and from a System.String.
 [UInt64Converter](/api/CsvHelper.TypeConversion/UInt64Converter) | Converts a System.UInt64 to and from a System.String.
 
-Interfaces | &nbsp;
+## Interfaces
+&nbsp; | &nbsp;
 - | -
 [ITypeConverter](/api/CsvHelper.TypeConversion/ITypeConverter) | Converts objects to and from strings.
 
-Enums | &nbsp;
+## Enums
+&nbsp; | &nbsp;
 - | -
 [ByteArrayConverterOptions](/api/CsvHelper.TypeConversion/ByteArrayConverterOptions) | Options for converting byte arrays.
+
+<br />

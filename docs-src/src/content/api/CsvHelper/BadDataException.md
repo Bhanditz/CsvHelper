@@ -1,4 +1,5 @@
 # BadDataException Class
+
 Namespace: [CsvHelper](/api/CsvHelper)
 
 Represents errors that occur due to bad data.

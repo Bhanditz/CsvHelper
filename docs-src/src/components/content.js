@@ -49,12 +49,15 @@ renderer.list = (body, ordered) => {
 		: `<div class="content"><ul>${body}</ul></div>`;
 };
 renderer.paragraph = text => wrapInColumns(`<p>${text}</p>`);
-renderer.table = (header, body) => `
-<table class="table">
-	<thead>${header}</thead>
+renderer.table = (header, body) => {
+	const replacedHeader = header.replace(/<\/?tr>|<\/?th>|&nbsp;|\s/ig, "");
+	const headerClass = replacedHeader.length > 0 ? "" : "is-empty";
+
+	return `<table class="table">
+	<thead class="${headerClass}">${header}</thead>
 	<tbody>${body}</tbody>
-</table>
-`;
+</table>`;
+}
 
 marked.setOptions({
 	renderer,
