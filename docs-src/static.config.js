@@ -15,7 +15,7 @@ function createData(name) {
 	});
 }
 
-function createRoutesFromToc() {
+function createRoutesFromToc(isDev) {
 	const routes = [];
 	Object.entries(toc).forEach(([key, value]) => {
 		createRoutesFromTocItem(value, routes);
@@ -25,12 +25,14 @@ function createRoutesFromToc() {
 }
 
 function createRoutesFromTocItem(item, routes) {
-	const route = {
-		path: item.path,
-		component: "src/pages/documentation",
-		getData: createData(item.path)
-	};
-	routes.push(route);
+	if (!item.path.includes("#")) {
+		const route = {
+			path: `/${item.path}`,
+			component: "src/pages/documentation",
+			getData: createData(item.path)
+		};
+		routes.push(route);
+	}
 
 	if (item.children) {
 		item.children.forEach(child => {
@@ -40,7 +42,7 @@ function createRoutesFromTocItem(item, routes) {
 }
 
 export default {
-	siteRoot: "https://joshclose.github.io",
+	//siteRoot: "https://joshclose.github.io",
 	basePath: "/CsvHelper/",
 	Document: ({ Html, Head, Body, children, siteData, renderMeta }) => (
 		<Html lang="en-US">
@@ -69,7 +71,7 @@ export default {
 			<Body>{children}</Body>
 		</Html>
 	),
-	getRoutes: async () => {
+	getRoutes: async ({ dev }) => {
 		return [
 			{
 				path: "/",
@@ -94,9 +96,12 @@ export default {
 				is404: true,
 				component: "src/pages/404",
 			},
-			...createRoutesFromToc()
+			...createRoutesFromToc(dev)
 		]
 	},
+	getSiteData: ({ dev }) => ({
+		isDev: dev
+	}),
 	webpack: (config, { defaultLoaders, stage }) => {
 		config.plugins.push(
 			new ExtractTextPlugin({

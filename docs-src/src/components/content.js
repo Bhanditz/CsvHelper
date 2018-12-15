@@ -3,7 +3,6 @@ import { withSiteData, withRouteData } from "react-static";
 import marked from "marked";
 import highlight from "highlight.js";
 import "highlight.js/styles/vs.css";
-import { Link } from "react-static";
 
 // https://github.com/EmilTholin/react-static-markdown-example
 

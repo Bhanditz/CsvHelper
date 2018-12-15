@@ -13,7 +13,7 @@ export default class Documentation extends Component {
 							<TableOfContents />
 						</div>
 					</div>
-					<div className="column content">
+					<div className="column container-content">
 						<Content />
 					</div>
 				</div>
