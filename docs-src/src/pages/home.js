@@ -14,8 +14,11 @@ import {
 	faThumbsUp
 } from "@fortawesome/free-solid-svg-icons";
 import {
+	faAmazon,
 	faApple,
-	faGithub
+	faGithub,
+	faOsi,
+	faPaypal
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-static";
@@ -52,7 +55,7 @@ export default class Home extends Component {
 									</div>
 								</div>
 								<div className="column">
-									<img src="/images/logo.png" />
+									<img src="/images/logo.svg" />
 								</div>
 							</div>
 
@@ -173,8 +176,9 @@ export default class Home extends Component {
 										<a href="https://opensource.org/licenses/Apache-2.0">Apache 2</a>.
 									</p>
 								</div>
-
 							</div>
+
+							<br />
 
 							<h3 className="title is-3">Help</h3>
 							<hr />
@@ -228,8 +232,9 @@ export default class Home extends Component {
 										if you have a question.
 									</p>
 								</div>
-
 							</div>
+
+							<br />
 
 							<h3 className="title is-3">Contributions</h3>
 							<hr />
@@ -251,12 +256,65 @@ export default class Home extends Component {
 								</ol>
 							</div>
 
+							<br />
+
 							<h3 className="title is-3">License</h3>
 							<hr />
 
 							<p>Completely free for commercial use. Dual licensed. Choose which ever license suits your needs.</p>
 							<p><a href="https://opensource.org/licenses/MS-PL">Microsoft Public License (MS-PL)</a></p>
 							<p><a href="https://opensource.org/licenses/Apache-2.0">Apache License, Version 2.0</a></p>
+
+							<br /><br />
+
+							<h3 className="title is-3">Donations</h3>
+							<hr />
+
+							<div className="columns is-multiline">
+								<div className="column is-4">
+									<h4 className="title is-4 has-text-weight-normal">
+										<span className="icon">
+											<FontAwesomeIcon icon={faPaypal} />
+										</span>
+										&nbsp;&nbsp;
+										<span>One Time Donation</span>
+									</h4>
+									<p className="subtitle is-6">
+										You can do a one time donation through{" "}
+										<a href="https://www.paypal.me/closejosh">Paypal</a>.
+									</p>
+								</div>
+
+								<div className="column is-4">
+									<h4 className="title is-4 has-text-weight-normal">
+										<span className="icon">
+											<FontAwesomeIcon icon={faOsi} />
+										</span>
+										&nbsp;&nbsp;
+										<span>Recurring Donations</span>
+									</h4>
+									<p className="subtitle is-6">
+										You can do recurring donations through{" "}
+										<a href="https://opencollective.com/csvhelper">Open Collective</a>.
+									</p>
+								</div>
+
+								<div className="column is-4">
+									<h4 className="title is-4 has-text-weight-normal">
+										<span className="icon">
+											<FontAwesomeIcon icon={faAmazon} />
+										</span>
+										&nbsp;&nbsp;
+										<span>Wish List</span>
+									</h4>
+									<p className="subtitle is-6">
+										If you want to do something a little more fun, you can pick something
+										from my <a href="http://a.co/7EwAZXU">Amazon wish list</a>. This
+										obviously doesn't go directly towards building software, but does help
+										keep me sane when I'm not.
+									</p>
+								</div>
+							</div>
 						</div>
 					</div>
 				</section>
