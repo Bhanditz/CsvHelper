@@ -12,7 +12,7 @@ export default class Header extends Component {
 					<div className="container is-fluid">
 						<div className="navbar-brand">
 							<Link className="navbar-item" to="/">
-								<img src="/images/logo-header.png" width="66" height="28" />
+								<img src="/images/logo-header.svg" width="66" height="28" />
 							</Link>
 
 							<div className="navbar-burger burger">

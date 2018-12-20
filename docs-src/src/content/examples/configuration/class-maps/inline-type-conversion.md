@@ -59,7 +59,7 @@ void Main()
 		new Foo { Id = 1, Name = "one" }
 	};
 	
-	using (var writer = new File.OpenWrite("path\\to\\file.csv"))
+	using (var writer = new StreamWriter("path\\to\\file.csv"))
 	using (var csv = new CsvWriter(writer))
 	{
 		csv.Configuration.RegisterClassMap<FooMap>();
