@@ -645,7 +645,21 @@
 			},
 			{
 				"title": "Writing",
-				"path": "examples/writing"
+				"path": "examples/writing",
+				"children": [
+					{
+						"title": "Write Class Objects",
+						"path": "examples/writing/write-class-objects"
+					},
+					{
+						"title": "Write Dynamic Objects",
+						"path": "examples/writing/write-dynamic-objects"
+					},
+					{
+						"title": "Write Anonymous Type Objects",
+						"path": "examples/writing/write-anonymous-type-objects"
+					}
+				]
 			},
 			{
 				"title": "Configuration",
