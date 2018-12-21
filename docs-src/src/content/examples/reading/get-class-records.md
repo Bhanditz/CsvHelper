@@ -1,12 +1,11 @@
-# Basic Reading
+# Get Class Records
 
-If your header names match your property names, you can read a CSV file without any configuration.
+Convert CSV rows into class objects.
 
 ###### Data
 ```
 Id,Name
 1,one
-2,two
 ```
 
 ###### Example
@@ -26,3 +25,5 @@ public class Foo
 	public string Name { get; set; }
 }
 ```
+
+<br />

@@ -614,8 +614,32 @@
 				"path": "examples/reading",
 				"children": [
 					{
-						"title": "Basic",
-						"path": "examples/reading/basic"
+						"title": "Get Class Records",
+						"path": "examples/reading/get-class-records"
+					},
+					{
+						"title": "Get Dynamic Records",
+						"path": "examples/reading/get-dynamic-records"
+					},
+					{
+						"title": "Get Anonymous Type Records",
+						"path": "examples/reading/get-anonymous-type-records"
+					},
+					{
+						"title": "Enumerate Class Records",
+						"path": "examples/reading/enumerate-class-records"
+					},
+					{
+						"title": "Reading by Hand",
+						"path": "examples/reading/reading-by-hand"
+					},
+					{
+						"title": "Reading Multiple Data Sets",
+						"path": "examples/reading/reading-multiple-data-sets"
+					},
+					{
+						"title": "Reading Multiple Record Types",
+						"path": "examples/reading/reading-multiple-record-types"
 					}
 				]
 			},
