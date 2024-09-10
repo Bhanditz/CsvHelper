@@ -20,8 +20,8 @@
 		"node-sass": "^4.7.2",
 		"react": "^16.0.0",
 		"react-dom": "^16.0.0",
-		"react-router": "^4.2.0",
-		"react-static": "^5.9.12",
+		"react-router": "^6.0.0",
+		"react-static": "^6.0.0",
 		"sass-loader": "^7.1.0",
 		"serve": "^10.0.2",
 		"webpack": "^3.12.0"
